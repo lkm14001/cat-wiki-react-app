@@ -1,26 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import BreedPage from "./components/BreedPage/BreedPage";
+import MainCompnent from "./components/MainComponent/MainCompnent";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import { Container,Box } from "@mui/material";
+import AllBreedsPage from "./components/AllBreedsPage/AllBreedsPage";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Container
+        maxWidth='xl'
+        sx={{
+          marginTop: 5,
+          mx:"auto",
+          maxWidth: {
+            xs: 350,
+            sm: 600,
+            md: 900,
+            lg: 1200,
+            xl: 1536,
+          },
+        }}
+        style={{ padding: 0 }}
+      >
+        <Header />
+        <Routes>
+          <Route path="/" element={<MainCompnent />} />
+          <Route path="/breed/:id" element={<BreedPage />} />
+          <Route path='/breed-list' element={<AllBreedsPage />} />
+        </Routes>
+        <Footer />
+      </Container>
+    </>
   );
-}
+};
 
 export default App;
