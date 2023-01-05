@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import AllBreedsPagination from "./AllBreedsPagination";
 
 const AllBreedsPage = () => {
   interface Breed {
@@ -11,6 +12,8 @@ const AllBreedsPage = () => {
   }
 
   const [breedListData, setBreedListData] = useState<Breed[]>([]);
+  const [currentPage, setCurrentPage] = useState<number>(1);
+  const [postsPerPage, setPostsPerPage] = useState(8);
 
   useEffect(() => {
     fetch(
@@ -40,13 +43,17 @@ const AllBreedsPage = () => {
       });
   }, []);
 
+  const lastPostIndex = currentPage * postsPerPage;
+  const firstPostIndex = lastPostIndex - postsPerPage;
+  const currentPosts = breedListData.slice(firstPostIndex, lastPostIndex);
+
   return (
     <>
       <Box
         component="div"
         sx={{
           my: 3,
-          
+
           display: "flex",
           flexDirection: "column",
           gap: 4,
@@ -55,7 +62,7 @@ const AllBreedsPage = () => {
         <Typography sx={{ fontSize: "36px", fontWeight: 700 }}>
           Top 10 Most Searched Breeds
         </Typography>
-        {breedListData.map((ele: any, key: any) => (
+        {currentPosts.map((ele: any, key: any) => (
           <Box
             component="div"
             sx={{
@@ -106,13 +113,18 @@ const AllBreedsPage = () => {
                 key + 1
               }. ${ele.breedName}`}</Typography>
               <Typography
-                sx={{ fontSize: "18px", fontWeight: 500, texAlign: "justify",width:{
-                  xs:300,
-                  sm:400,
-                  md:600,
-                  lg:700,
-                  xl:888,
-                } }}
+                sx={{
+                  fontSize: "18px",
+                  fontWeight: 500,
+                  texAlign: "justify",
+                  width: {
+                    xs: 300,
+                    sm: 400,
+                    md: 600,
+                    lg: 700,
+                    xl: 888,
+                  },
+                }}
               >
                 {ele.breedDescription}
               </Typography>
@@ -120,6 +132,13 @@ const AllBreedsPage = () => {
           </Box>
         ))}
       </Box>
+
+      <AllBreedsPagination
+        totalPosts={breedListData.length}
+        page={currentPage}
+        postsPerPage={postsPerPage}
+        setCurrentPage={setCurrentPage}
+      />
     </>
   );
 };
