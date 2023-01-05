@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Cat-Explore/static/css/main.e6c13ad2.css",
+    "main.js": "/Cat-Explore/static/js/main.022da242.js",
+    "static/js/787.332f3135.chunk.js": "/Cat-Explore/static/js/787.332f3135.chunk.js",
+    "static/media/HeroImagexl.png": "/Cat-Explore/static/media/HeroImagexl.b8e8da0106a66d0639ce.png",
+    "static/media/HeroImagelg.png": "/Cat-Explore/static/media/HeroImagelg.c5e665e1f33e3c00d361.png",
+    "static/media/image3.png": "/Cat-Explore/static/media/image3.084e290fd2d3180fd127.png",
+    "static/media/image2.png": "/Cat-Explore/static/media/image2.4e193fd0e4472a27259e.png",
+    "static/media/image1.png": "/Cat-Explore/static/media/image1.ed2005d9b202dc495020.png",
+    "static/media/HeroImagesm.png": "/Cat-Explore/static/media/HeroImagesm.6c62aad8422b90729005.png",
+    "static/media/CatwikiLogo.svg": "/Cat-Explore/static/media/CatwikiLogo.92dea8ab257fdeba06fd338f559796ae.svg",
+    "index.html": "/Cat-Explore/index.html",
+    "main.e6c13ad2.css.map": "/Cat-Explore/static/css/main.e6c13ad2.css.map",
+    "main.022da242.js.map": "/Cat-Explore/static/js/main.022da242.js.map",
+    "787.332f3135.chunk.js.map": "/Cat-Explore/static/js/787.332f3135.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.022da242.js"
+  ]
+}
