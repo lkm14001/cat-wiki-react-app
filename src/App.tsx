@@ -26,9 +26,9 @@ const App = () => {
       >
         <Header />
         <Routes>
-          <Route path="/" element={<MainCompnent />} />
-          <Route path="/breed/:id" element={<BreedPage />} />
-          <Route path='/breed-list' element={<AllBreedsPage />} />
+          <Route path="/cat-wiki-react-app" element={<MainCompnent />} />
+          <Route path="cat-wiki-react-app/breed/:id" element={<BreedPage />} />
+          <Route path='cat-wiki-react-app/breed-list' element={<AllBreedsPage />} />
         </Routes>
         <Footer />
       </Container>
