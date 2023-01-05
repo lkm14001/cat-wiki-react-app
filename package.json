@@ -1,7 +1,7 @@
 {
   "name": "catwiki-frontend",
   "version": "0.1.0",
-  "homepage":"https://lkm14001.github.io/Cat-Explore",
+  "homepage":"https://lkm14001.github.io/cat-wiki-react-app",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
