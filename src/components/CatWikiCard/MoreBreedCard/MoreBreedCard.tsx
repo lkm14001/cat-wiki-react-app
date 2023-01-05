@@ -108,6 +108,7 @@ const MoreBreedCard = () => {
                 display: "flex",
                 alignItems:"center",
                 fontSize: {
+                  xs:"10px",
                   sm: "10px",
                   md: "15px",
                   xl: "18px",
