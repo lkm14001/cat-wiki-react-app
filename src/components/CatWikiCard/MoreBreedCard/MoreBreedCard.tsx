@@ -105,10 +105,7 @@ const MoreBreedCard = () => {
             <Typography
               sx={{
                 textTransform: "uppercase",
-                display: {
-                  xs: "none",
-                  sm:"flex",
-                },
+                display: "flex",
                 alignItems:"center",
                 fontSize: {
                   sm: "10px",
