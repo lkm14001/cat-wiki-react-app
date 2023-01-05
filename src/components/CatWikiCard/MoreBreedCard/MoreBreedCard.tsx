@@ -107,7 +107,7 @@ const MoreBreedCard = () => {
           >
             66+ Breeds For you to discover
           </Typography>
-          <Link to="cat-wiki-react-app/breed-list">
+          <Link to="/cat-wiki-react-app/breed-list">
             <Typography
               sx={{
                 textTransform: "uppercase",
