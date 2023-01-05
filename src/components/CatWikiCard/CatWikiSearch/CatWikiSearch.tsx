@@ -42,10 +42,15 @@ const CatWikiSearch = () => {
             lg: 280,
             xl: 380,
           },
+          
           backgroundColor: "white",
           outline: "none",
           border: "none",
-          borderRadius: 10,
+          borderRadius: {
+            xs:4,
+            md:8,
+            lg:10
+          },
           "& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline": {
             border: "none",
           },

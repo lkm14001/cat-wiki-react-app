@@ -46,6 +46,7 @@ const AllBreedsPage = () => {
         component="div"
         sx={{
           my: 3,
+          
           display: "flex",
           flexDirection: "column",
           gap: 4,
@@ -105,7 +106,13 @@ const AllBreedsPage = () => {
                 key + 1
               }. ${ele.breedName}`}</Typography>
               <Typography
-                sx={{ fontSize: "18px", fontWeight: 500, texAlign: "justify" }}
+                sx={{ fontSize: "18px", fontWeight: 500, texAlign: "justify",width:{
+                  xs:300,
+                  sm:400,
+                  md:600,
+                  lg:700,
+                  xl:888,
+                } }}
               >
                 {ele.breedDescription}
               </Typography>

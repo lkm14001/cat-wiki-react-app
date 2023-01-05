@@ -9,6 +9,7 @@ import flexImage3 from '../../assets/image3.png';
 const HaveACatSection = () => {
   return (
         <Box component="div" sx={{
+            marginTop:3,
             padding:{
                 xs:0,
                 sm:10

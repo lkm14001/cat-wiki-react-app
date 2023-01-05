@@ -6,7 +6,7 @@ import logo from "../../assets/CatwikiLogo.svg";
 const Header = () => {
   return (
     <>
-      <Link to="/">
+      <Link to="/cat-wiki-react-app">
         <Box
           component="img"
           sx={{

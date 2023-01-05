@@ -45,13 +45,7 @@ const MoreBreedCard = () => {
             xl: "30px 108px",
           },
           backgroundColor: "#E3E1DC",
-          height: {
-            xs: 300,
-            sm: 380,
-            md: 420,
-            lg: 460,
-            xl: 500,
-          },
+          
           borderBottomRightRadius:20,
           borderBottomLeftRadius:20,
         }}
@@ -107,7 +101,7 @@ const MoreBreedCard = () => {
           >
             66+ Breeds For you to discover
           </Typography>
-          <Link to="/cat-wiki-react-app/breed-list">
+          <Link to="/cat-wiki-react-app/breed-list" style={{textDecoration:"none"}}>
             <Typography
               sx={{
                 textTransform: "uppercase",
@@ -137,9 +131,25 @@ const MoreBreedCard = () => {
             md:"35px",
             lg:"45px"
           },
-            display:"flex",
-            justifyContent:"space-between",
-            alignItems:"center"
+            display:"grid",
+            // flexDirection:{
+            //   xs:"column",
+            //   md:"row"
+            // },
+            gridTemplateColumns:{
+              xs:"repeat(1,1fr)",
+              sm:"repeat(3,1fr)",
+              md:"repeat(4,1fr)",
+              lg:"repeat(5,1fr)"
+            },
+            gap:{
+              xs:"10px",
+              sm:"15px",
+              md:"20px",
+            },
+            placeItems:"center center"
+            // justifyContent:"space-between",
+            // alignItems:"center"
         }}>
           {breedImages.map((ele,key)  => (
               <BreedCards title={ele.title} url={ele.url} key={key} id={ele.id}/>

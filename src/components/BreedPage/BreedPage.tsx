@@ -36,7 +36,11 @@ const BreedImageComponent = (props: characteristicCountType) => {
             <Box
               component="div"
               sx={{
-                width: 55,
+                width:{
+                  xs:30,
+                  sm:40,
+                  md:55
+                },
                 height: 12,
                 borderRadius: 8,
                 backgroundColor: "rgba(84, 68, 57, 1)",
@@ -49,7 +53,11 @@ const BreedImageComponent = (props: characteristicCountType) => {
             <Box
               component="div"
               sx={{
-                width: 55,
+                width: {
+                  xs:30,
+                  sm:40,
+                  md:55
+                },
                 height: 12,
                 borderRadius: 8,
                 backgroundColor: "rgba(224, 224, 224, 1)",
@@ -169,6 +177,7 @@ const BreedPage = () => {
             display: "flex",
             flexDirection: "column",
             width: {
+              xs:320,
               sm: 480,
               md: 550,
               xl: 803,
@@ -274,7 +283,7 @@ const BreedPage = () => {
         }}
       >
         <Typography
-          sx={{ fontSize: { xs: "30px", md: "36px" }, fontWeight: 600,color:"rgba(41, 21, 7, 1)" }}
+          sx={{ fontSize: { xs: "30px", md: "36px" },marginLeft:{xs:2}, fontWeight: 600,color:"rgba(41, 21, 7, 1)" }}
         >
           Other Photos
         </Typography>
