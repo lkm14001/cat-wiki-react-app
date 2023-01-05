@@ -70,7 +70,7 @@ const AllBreedsPage = () => {
               gap: 4,
             }}
           >
-            <Link to={`/breed/${ele.reference_image_id}`}>
+            <Link to={`/cat-wiki-react-app/breed/${ele.reference_image_id}`}>
               <Box
                 component="div"
                 sx={{

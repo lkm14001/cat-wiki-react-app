@@ -18,7 +18,7 @@ const BreedCards = (props:breedCardsTypes) => {
           flexDirection: "column",
         }}
       >
-        <Link style={{textDecoration:"none"}} to={`/breed/${props.id}`}>
+        <Link style={{textDecoration:"none"}} to={`/cat-wiki-react-app/breed/${props.id}`}>
         <Box
           component="div"
           sx={{
